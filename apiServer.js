@@ -11,7 +11,7 @@ app.use(express.static('public'));
 // These lines will be explained in detail later in the unit
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://giftadmin:admin@cluster0.wbg32.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://giftadmin:admin@cluster0.wbg32.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const client = new MongoClient(uri, {
 	useNewUrlParser: true, useUnifiedTopology: true, connectTimeoutMS: 3000, keepAlive: true,	
